@@ -1,0 +1,82 @@
+---
+import ProgressBarIntro from "./ProgressBarIntro.astro";
+import Button from "./Button.astro";
+import BlogContentCourse from "./BlockContentCourse.astro";
+---
+<section class="landing">
+  <div class="block">
+    <div class="left">
+      <h1
+        class="font-bold text-text-heading text-left text-4xl md:text-5xl pt-4 pb-2 overflow-hidden"
+      >
+        <span
+          class="
+              bg-gradient-to-bl bg-no-repeat bg-bottom bg-[length:9|0%_40%]
+              from-primary-blue to-primary-blue dark:from-primary-blue dark:to-primary-blue
+          "
+        >
+          Aprende Git y Github 
+        </span>
+        
+      </h1>
+      <p class="mb-5">
+        Este es un curso dirigido a estudiantes de Ciencia de la computación,
+         pensado en obtener un aprendizaje profundo y dominio práctico Git y Github
+      </p>
+      <strong>Mi progreso</strong>
+      <ProgressBarIntro/> 
+      <!-- <p class="text-2xl pb-4">Web Developer. OSS Wizard. Blogger.</p> -->
+    </div>
+  
+    <div class="derecha">
+      <Button link = "" content = "Ver temario" color = "white" />
+      <Button link = "" content = "Empezar curso" color = "white" />
+    </div>
+  </div>
+  <div class="contentCourse">
+    <BlogContentCourse  progress="50%" content = "1. Introducción a Git e instalación" />
+    <BlogContentCourse  progress="50%" content = "2. Fundamentos de Git" />
+    <BlogContentCourse  progress="50%" content = "3. Ramas en Git" />
+    <Button link = "" content = "Empezar curso" color = "white" />
+  </div>
+  
+</section>
+
+
+<style>
+
+  .landing{
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+  .block {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    width: 100%;
+  }
+  .left{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 1rem;
+  }
+  .derecha{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    width: 30%;
+    padding: 1rem;
+    align-items: center;
+  }
+  .contentCourse{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 2rem;
+
+  }
+
+</style>

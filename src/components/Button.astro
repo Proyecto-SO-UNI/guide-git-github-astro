@@ -1,0 +1,16 @@
+---
+const {content, link, color} = Astro.props;
+
+---
+<div>
+    <a href={link}>{content}</a>
+</div>
+<style>
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: auto;
+    }
+</style>

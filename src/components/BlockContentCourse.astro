@@ -1,0 +1,39 @@
+---
+const  {progress, content} = Astro.props;
+
+---
+
+<div class="blockContent">
+    <div class="progress">
+        {progress}
+    </div>
+    <div class="content">
+        {content}
+    </div>
+</div>
+<style>
+    .progress{
+        border: .2rem solid var(--color-primary-blue);
+        border-radius: 500px;
+        width: 3rem;
+        height: 3rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;   
+        background-color: var(--color-background-theme-ligth);     
+    }
+    .content{
+        padding: 1rem;
+        
+    }
+    .blockContent{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: .1rem solid #000;
+        border-radius: 20px;
+        width: 70%;
+    }
+</style>
