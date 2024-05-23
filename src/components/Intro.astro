@@ -2,6 +2,7 @@
 import ProgressBarIntro from "./ProgressBarIntro.astro";
 import Button from "./Button.astro";
 import BlogContentCourse from "./BlockContentCourse.astro";
+import Footer from "./Footer.astro";
 ---
 <section class="landing">
   <div class="block">
@@ -29,8 +30,8 @@ import BlogContentCourse from "./BlockContentCourse.astro";
     </div>
   
     <div class="derecha">
-      <Button link = "" content = "Ver temario" color = "white" />
-      <Button link = "" content = "Empezar curso" color = "white" />
+      
+      <Button link = "./course" content = "Empezar curso" color = "white" />
     </div>
   </div>
   <div class="contentCourse">
@@ -41,6 +42,7 @@ import BlogContentCourse from "./BlockContentCourse.astro";
   </div>
   
 </section>
+
 
 
 <style>
@@ -70,6 +72,7 @@ import BlogContentCourse from "./BlockContentCourse.astro";
     width: 30%;
     padding: 1rem;
     align-items: center;
+    justify-content: center;
   }
   .contentCourse{
     display: flex;

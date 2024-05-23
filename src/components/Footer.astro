@@ -2,7 +2,18 @@
 ---
 
 <footer class="text-sm leading-[1.75] mt-4">
-  <div>
+  <div class="logo">
+    Logo
+  </div>
+  <div class="input">
+    <p>Este es un trabajo del curso Sistemas Operativos de la UNI el cual 
+      es una parte del proyecto Reingeniería personal y social para la vida </p>
+    <strong>Te gustaría ayudarnos con una reseña? Nos encantaría!</strong>
+    <input type="text" placeholder="Escribe tu reseña" class="border border-gray-300 rounded-md p-1">
+    
+  </div>
+  <!--
+    <div>
     This blog is built with 
     <a
       class="unset gradient-link tracking-wider font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#f57111] to-[#f79605] hover:after:bg-gradient-to-r hover:after:from-[#f57111] hover:after:to-[#f79605]"
@@ -17,15 +28,36 @@
     >
       Netlify</a>.
   </div>
+   -->
+  
 </footer>
 
 <style>
+  .logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+  .input{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+  }
   footer {
     grid-area: footer;
     text-align: center;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
+    margin: 3rem;
+    text-align: left;
   }
 
   .gradient-link {
